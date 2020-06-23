@@ -1,0 +1,62 @@
+Descendant Selector
+Select an element inside another element
+A  B
+
+Select all the plates and bentos
+Comma Combinator
+Combine, selectors, with... commas!
+A, B
+
+Select every apple that's next to a plate
+Adjacent Sibling Selector
+Select an element that directly follows another element
+A + B
+
+General Sibling Selector
+Select elements that follows another element
+
+Select the pickles beside the bento
+A ~ B
+You can select all siblings of an element that follow it. 
+This is like the Adjacent Selector (A + B) 
+except it gets all of the following elements instead of one.
+
+Select the apple directly on a plate
+Child Selector
+Select direct children of an element
+A > B 
+You can select elements that are direct children of other elements. 
+A child element is any element that is nested directly in another element.
+Elements that are nested deeper than that are called descendant elements.
+
+Select the top orange
+First Child Pseudo-selector
+Select a first child element inside of another element
+orange:first-child
+You can select the first child element. 
+A child element is any element that is directly nested in another element. 
+You can combine this pseudo-selector with other selectors.
+
+Select the apple and the pickle on the plates
+Only Child Pseudo-selector
+Select an element that are the only element inside of another one.
+:only-child
+You can select any element that is the only element inside of another one.
+
+Select the apple and the pickle on the plates
+Only Child Pseudo-selector
+Select an element that are the only element inside of another one.
+:only-child
+plate *:only-child
+You can select any element that is the only element inside of another one.
+
+Last Child Pseudo-selector
+Select the last element inside of another element
+:last-child
+You can use this selector to select an element that is the last child
+element inside of another element.
+
+Pro Tip → In cases where there is only one element, 
+that element counts as the first-child, only-child and last-child!
+
+ul li:last-child selects the last li elements inside of any ul

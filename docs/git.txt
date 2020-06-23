@@ -1,0 +1,30 @@
+CONFIGURING GIT
+git config --global user.email "costa.tim@live.be"
+
+CREATING AND PUSHING FIRST FILE
+echo "# Projects" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/TimCoder238/Projects.git
+git push -u origin master
+
+PUSHING ALL FILES
+git add *
+git commit -m "second commit"
+git push -u origin master
+
+…or create a new repository on the command line
+echo "# MyWebsite" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/TimCoder238/MyWebsite.git
+git push -u origin master
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/TimCoder238/MyWebsite.git
+git push -u origin master
+
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
